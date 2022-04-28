@@ -1,0 +1,87 @@
+.main-div{
+    color: brown;
+    border: solid 4px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    width: 95%;
+}
+
+.reference-section{
+    width: 95%;
+	background-color:transparent;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	border: solid 3px;
+	color: rgb(255, 102, 0);
+    color: brown;
+    display: flex;
+}
+
+.reference-img{
+    /* display: inline-flex; */
+    width: 48%;
+    border: solid 2px;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 7px;
+    margin-bottom: 30px;
+}
+
+.impl-img{
+    /* display: inline-flex; */
+    width: 48%;
+    border: solid 2px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 7px;
+    margin-bottom: 30px;
+}
+
+.description{
+    width: 60%;
+    border: solid 3px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin-left: 7px; */
+}
+
+.heading{
+    width: 95%;
+	margin: auto;
+	background-color: teal;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: solid 3px darkred;
+	font-size: 24px;
+    text-align: center;
+}
+
+.heading:hover{
+    border: solid 2px;
+	border-color: teal;
+	background-color: white;
+	color: red;
+}
+
+img{
+    height: 700px;
+    width: 600px;
+    max-width: auto;
+    margin-bottom: 20px;
+}
+
+p{
+    width: 90%;
+	margin: auto;
+	color: darkgreen;
+	text-align: left;
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 2;	
+}

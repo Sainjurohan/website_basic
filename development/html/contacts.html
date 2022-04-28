@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="21039649 Rohan Sainju">
+	<meta name="description" content="Just Basic HTML">
+	<!-- linking external style sheets. -->
+	<link rel="stylesheet" type="text/css" href="../css/contactStyle.css">
+	<link rel="stylesheet" href="../css/navStyle.css">
+	<!--<meta http-equiv="refresh" content="10">-->
+	
+	<title>Inquiry</title>
+</head>
+<body>
+	<!-- creating navigation bar to ease navigation between htnml pages -->
+	<nav class="navbar">
+		<!-- division for logo of page. -->
+		<div class="logo">E-Commerce</div>
+		<!-- division for navigaation links of html pages. -->
+		<div class="menu">
+			<ul>
+				<li><a href="../home.html">Home</a></li>
+				<li><a href="payment.html">Payments</a></li>
+				<li class="current"><a href="../html/contacts.html">Inquiry</a></li>
+				<li><a href="../html/reference.html">Reference</a></li>
+				<li><a href="../html/blog.html">Blog</a></li>
+			</ul>
+		</div>
+
+	</nav>
+
+	<h2 align="center">Welcome to our E-Commerce Website</h2>
+
+	<!-- division for inquiry form in case of inquiry -->
+	<div class="customer-info">
+		<section class="inquiry-header">Inquiry Interface</section>
+		<!-- creating tables with input fields to collect inquiry from customers. -->
+		<form>
+		<table width="100%">
+			<tr>
+				<th>First Name</th>
+				<th>
+					<input type="text" name="fname" id="fname" placeholder="Type First Name Here" class="input-field">
+					<!-- span to display error in firstname -->
+					<span id="FnameErr" class="error"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<th>
+					<input type="text" name="lname" id="lname" placeholder="Type Last Name Here" class="input-field">
+					<!-- span to display error in lastname of customer. -->
+					<span id="LnameErr" class="error"></span>
+				</th>
+			</tr>
+			
+			<tr>
+				<th>Email</th>
+				<th>
+					<input type="text" name="email" id="email" placeholder="e.g. someone@gmail.com" class="input-field">
+					<!-- span to display error in email. -->
+					<span id="emailErr" class="error"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>Password</th>
+				<th>
+					<input type="password" name="password" id="pass" placeholder="Type Password Here" class="input-field" min="5">
+					<!-- span to display error in password. -->
+					<span id="passErr" class="error"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<th>
+					Male <input type="radio" name="gender" value="male" checked class="radio" id="gender">
+					Female <input type="radio" name="gender" value="female" class="radio" id="gender">
+				</th>
+			</tr>
+			<tr>
+				<th>Phone</th>
+				<th>
+					<input type="text" name="phone" id="phone" placeholder="e.g. +9779890422515" class="input-field">
+					<!-- span to display error in phone number. -->
+					<span id="phoneErr" class="error"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<th>
+					<input type="text" name="address" id="add" class="input-field" placeholder="Type Address Here">
+					<!-- span to display error in adddress. -->
+					<span id="addErr" class="error"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>Inquiry/Feedback</th>
+				<th>
+					<textarea class="input-field" placeholder="Type Inquiry Here" rows="5" cols="10" id="inquiry"></textarea>
+					<!-- span to display error in case of empty inquiry. -->
+					<span id="inqErr" class="error"></span>
+				</th>
+			</tr>
+		</table>
+		</form>
+		<!-- Submit button to submit the inquiry form filled by customer. -->
+		<button class="submitBtn" onclick="verifyAllFields()">Submit</button>
+	</div>
+
+	<footer style="margin-top: 40px;" id="footer">
+		<div class="footer-div">
+			<h1>Contact Us</h1>
+			<h2 style="margin-top: 10px;">KBR Enterprises</h2>
+			<section class="info">Sales: +9779849152587</section>
+			<section class="info">Email: kbrEnterprises@gmail.com.np</section>
+			<section class="info">Facebook: @kbrEnterprises</section>
+			<section class="info">Location: Some Place, Bhaktapur, Bagmati, Nepal</section>
+			<section class="info">Zip code: 44800</section><br>
+			<p class="info">&copy;21039649 Rohan Sainju</p>
+		</div>
+	</footer>
+</body>
+<!-- including external javascript for the page. -->
+<script type="text/javascript" src="../js/contactHandler.js"></script>
+</html>

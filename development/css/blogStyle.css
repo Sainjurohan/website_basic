@@ -1,0 +1,58 @@
+body{
+	background-image: url(../img/blog5.jpg);
+}
+
+.blog-div{
+	background-color: transparent;
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+	border: solid 5px;
+	border-color: brown;
+
+
+}
+
+.blog-header{
+	width: 95%;
+	margin: auto;
+	background-color: teal;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-bottom: solid 3px darkred;
+	font-size: 24px;
+
+}
+
+.blog-header:hover{
+	border: solid 2px;
+	border-color: teal;
+	background-color: white;
+	color: red;
+}
+
+.blog-content{
+	width: 90%;
+	margin: auto;
+	color: darkgreen;
+	text-align: left;
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 2;	
+}
+
+.blog-sub-heading{
+	font-size: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+	color: brown;
+}
+
+.blog-section{
+	border-bottom: solid 3px darkred;
+	width: 95%;
+	margin: auto;
+}
+

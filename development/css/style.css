@@ -1,0 +1,135 @@
+/* using class selector to provide style for product class in home */
+.products{
+	width: 80%;
+	background-color:transparent;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	margin-top: 30px;
+	border: solid 2px;
+	color: rgb(255, 102, 0);
+}
+
+/* using element selector to provide style to label element in home paage */
+label{
+	font-size: 22px;
+	font-weight: bold;
+	color: rgb(255, 102, 0);
+}
+
+/* providing style to product-tag class in home page. */
+.product-tags{
+	text-align: center;
+	padding: auto;
+	background-color: transparent;
+
+}
+
+/* providing style to product-info class in home page. */
+.product-info{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/* providing style to product category in home */
+.category{
+	background-color: teal;
+	width: 100%;
+	font-size: 26px;
+	opacity: 0.7;
+	color: floralwhite;
+}
+
+/* providing hover property for category class */
+.category:hover{
+	color: red;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+/* providing styling to button element in home page.. */
+button{
+	margin-top: 20px;
+	height: 40px;
+	width: 90px;
+	background-color: teal;
+	opacity: 0.7;
+	color: white;
+	font-family: cursive;
+}
+
+/* providing hover property to button element.. */
+button:hover{
+	color: red;
+	background-color: white;
+}
+
+.cart-column{
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid rgb(255, 102, 0) ;
+	margin-right: 40px ;
+	margin-left: 20px;
+	padding: auto;
+	margin-top: 20px;
+	width: 80%;
+	font-weight: bold;
+}
+
+.cart-row{
+	display: flex;
+}
+
+.cart-items{
+	width: 100%;
+}
+
+.cart-price{
+	font-size: 20px;
+}
+
+.cart-quantity{
+	width: 50px;
+	height: auto;
+	justify-content: space-between;
+	background-color: transparent;
+	border-color: rgb(255, 102, 0);
+	color: brown;
+	font-family: cursive;
+	border-style: groove;
+	margin-right: 20px;
+}
+
+.total{
+	margin-top: 20px;
+}
+
+.total-title{
+	font-size: 25px;
+}
+
+.total-price{
+	font-size: 18px;
+}
+
+.remove-btn{
+	height: 30px;
+	width: 80px;
+	background-color: teal;
+	opacity: 0.7;
+	color: white;
+	font-family: cursive;
+}
+
+.nav-page{
+	font-size: 18px;
+	width: 4%;
+	margin-left: 92%;
+	margin-right: 4%;
+	position: fixed;
+	
+}
+
+.nav-btn{
+	border-radius: 50%;
+}

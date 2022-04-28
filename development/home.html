@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- meta tag to specify keywords for the webpage. -->
+	<meta name="keywords" content="HTML">
+	<!-- meta tag to specify author of the page. -->
+	<meta name="author" content="21039649 Rohan Sainju">
+	<!-- meta tag to specify the description of the page. -->
+	<meta name="description" content="Just Basic HTML">
+	<!-- linking external style sheets -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="./css/navStyle.css">
+	<!-- linking external javascript to the page -->
+	<script type="text/javascript" src="./js/homeHandler.js"></script>
+	<!--<meta http-equiv="refresh" content="50">-->
+
+	<!-- internal javascript to display welcome message -->
+	<script type="text/javascript" async>
+		function greetings(){
+			alert("Welcome to website");
+		}
+
+	</script>
+
+	<title>Home</title>
+</head>
+<body onload="greetings()" class="top">
+	<!-- creating navigation bar to ease navigation between htnml pages -->
+	<nav class="navbar">
+		<!-- creating division for logo of page -->
+		<div class="logo">E-Commerce</div>
+		<!-- creating navigatin menu -->
+		<div class="menu">
+			<ul>
+				<li class="current"><a href="home.html">Home</a></li>
+				<li><a href="./html/payment.html">Payments</a></li>
+				<li><a href="./html/contacts.html">Inquiry</a></li>
+				<li><a href="./html/reference.html">Reference</a></li>
+				<li><a href="./html/blog.html">Blog</a></li>
+			</ul>
+		</div>
+
+	</nav>
+
+	<h2 align="center" id="intro">Welcome to our E-Commerce Website</h2>
+	<div class="nav-page">
+		<button class="nav-btn"><a href="#top" style="color: red;"> Goto Top</a></button>
+	</div>
+
+	<!-- creating the division for adding the products to cart to ease purchase -->
+	<div class="products">
+		<section class="category">Cart</section>
+		<div class="cart-row">
+			<span class="cart-column">ITEM</span>
+			<span class="cart-column">PRICE</span>
+			<span class="cart-column">QUANTITY</span>
+		</div>
+		<!-- creating division for adding items in cart which is initially empty
+		and will be edited when button is triggered to add item to cart -->
+		<div class="cart-items"></div>
+		<div class="total">
+			<section class="total-title">Total</section>
+			<span class="total-price">0 NRS</span>
+		</div>
+		<!-- adding a button to purchase the items in cart -->
+		<button class="purchase-btn">Purchase</button>
+	</div>
+
+	<!-- creating a division for displaying products -->
+	<div class = "products">
+		<!-- creating a section to display the category of products -->
+		<section class="category">Mobile</section>
+		<!-- creating a table to display category items -->
+		<table width="100%" class="product-tags" id="product1">
+			<tr>
+				<th>
+					<section class="product-info">
+						<!-- displaying product name. -->
+						<h2 class="product-name">Iphone</h2>
+						<!-- displaying product image. -->
+						<img class="product-image" src="./img/mobile/iphone2.jpg" height="200" width="200" alt="iphone">
+						<!-- displaying product price. -->
+						<section class="product-price">65000 NRS</section>
+						<!-- add to cart botton to add products to cart -->
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Honor</h1>
+						<img class="product-image" src="./img/mobile/honor.jpg" height="200" width="200">
+						<section class="product-price">75000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Nokia</h1>
+						<img class="product-image" src="./img/mobile/nokia.jpg" height="200" width="200">
+						<section class="product-price">5000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Galaxy</h1>
+						<img class="product-image" src="./img/mobile/samsung.jpg" height="200" width="200">
+						<section class="product-price">95000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Rog</h1>
+						<img class="product-image" src="./img/mobile/rog.jpg" height="200" width="200">
+						<section class="product-price">95000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+			</tr>
+		</table>
+		<table width="100%" class="product-tags" id="product2" style="display: none;">
+			<tr>
+				<th>
+					<section class="product-info">
+						<h2 class="product-name">Vivo</h2>
+						<img class="product-image" src="./img/mobile/vivo22.jpg" height="200" width="200" alt="iphone">
+						<section class="product-price">55000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Huawei</h1>
+						<img class="product-image" src="./img/mobile/huawei.jpg" height="200" width="200">
+						<section class="product-price">65500 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Nokia 8</h1>
+						<img class="product-image" src="./img/mobile/nokia8.jpg" height="200" width="200">
+						<section class="product-price">55000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Galaxy Flip</h1>
+						<img class="product-image" src="./img/mobile/flip.jpg" height="200" width="200">
+						<section class="product-price">115200 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">ZenFone</h1>
+						<img class="product-image" src="./img/mobile/zenfone1.jfif" height="200" width="200">
+						<section class="product-price">35000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+			</tr>
+		</table>
+		<!-- next button to display next products in addition to the ones present hiding old ones -->
+		<button class="next-btn"><b>Next</b></button>
+		<!-- previous button to display previous list of product hiding new ones -->
+		<button class="prev-btn"><b>Previous</b></button>
+	</div>
+
+	<!-- division to display products of kitchenwares -->
+	<div class="products">
+		<section class="category">Kitchen Wares</section>
+		<table width="100%" class="product-tags">
+			<tr>
+				<th>
+					<section class="product-info">
+						<h2 class="product-name">Toster</h2>
+						<img class="product-image" src="./img/kitchenwares/toster2.jpg" height="200" width="200">
+						<section class="product-price">20000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Grinder</h1>
+						<img class="product-image" src="./img/kitchenwares/grinder.jpg" height="200" width="200">
+						<section class="product-price">15000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Oven</h1>
+						<img class="product-image" src="./img/kitchenwares/oven.jpg" height="200" width="200">
+						<section class="product-price">50000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Mixer</h1>
+						<img class="product-image" src="./img/kitchenwares/mixer.jpg" height="200" width="200">
+						<section class="product-price">65000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Refrigerator</h1>
+						<img class="product-image" src="./img/kitchenwares/refrigerator.jpg" height="200" width="200">
+						<section class="product-price">75000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+
+			</tr>
+		</table>
+		<table width="100%" class="product-tags" style="display: none;">
+			<tr>
+				<th>
+					<section class="product-info">
+						<h2 class="product-name">Electric Cooker</h2>
+						<img class="product-image" src="./img/kitchenwares/cooker.jpg" height="200" width="200">
+						<section class="product-price">18000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Kettle</h1>
+						<img class="product-image" src="./img/kitchenwares/kettle.jpg" height="200" width="200">
+						<section class="product-price">11000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Air Frier</h1>
+						<img class="product-image" src="./img/kitchenwares/airFrier.jpg" height="200" width="200">
+						<section class="product-price">45550 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">SMEG Set</h1>
+						<img class="product-image" src="./img/kitchenwares/KettleToster.jpg" height="200" width="200">
+						<section class="product-price">75500 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Grill</h1>
+						<img class="product-image" src="./img/kitchenwares/grill.jpeg" height="200" width="200">
+						<section class="product-price">65500 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+
+			</tr>
+		</table>
+		<!-- next button to display next products in addition to the ones present hiding old ones -->
+		<button class="next-btn"><b>Next</b></button>
+		<!-- previous button to display previous list of product hiding new ones -->
+		<button class="prev-btn"><b>Previous</b></button>
+	</div>
+
+	<!-- division to display products of House Wares. -->
+	<div class="products">
+		<section class="category">House Wares</section>
+		<table width="100%" class="product-tags">
+			<tr>
+				<th>
+					<section class="product-info">
+						<h2 class="product-name">Laptop</h2>
+						<img class="product-image" src="./img/houseware/laptop.jpg" height="200" width="200">
+						<section class="product-price">125000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">TV</h1>
+						<img class="product-image" src="./img/houseware/tv.jpg" height="200" width="200">
+						<section class="product-price">165000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Washing Machine</h1>
+						<img class="product-image" src="./img/houseware/washingMachine.jpg" height="200" width="200">
+						<section class="product-price">95000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Heater</h1>
+						<img class="product-image" src="./img/houseware/roomHeater2.jpg" height="200" width="200">
+						<section class="product-price">35000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Gaming CPU</h1>
+						<img class="product-image" src="./img/houseware/gamingCPU.jfif" height="200" width="200">
+						<section class="product-price">135000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+			</tr>
+		</table>
+		<table width="100%" class="product-tags" style="display: none;">
+			<tr>
+				<th>
+					<section class="product-info">
+						<h2 class="product-name">UPS</h2>
+						<img class="product-image" src="./img/houseware/ups.jpg" height="200" width="200">
+						<section class="product-price">30550 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">OG AC</h1>
+						<img class="product-image" src="./img/houseware/OgAc.jpg" height="200" width="200">
+						<section class="product-price">55090 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Water Dispenser</h1>
+						<img class="product-image" src="./img/houseware/dispenser.jpg" height="200" width="200">
+						<section class="product-price">25360 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Speaker</h1>
+						<img class="product-image" src="./img/houseware/speaker.jpg" height="200" width="200">
+						<section class="product-price">15520 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Inverter</h1>
+						<img class="product-image" src="./img/houseware/inverter.jpg" height="200" width="200">
+						<section class="product-price">45620 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+			</tr>
+		</table>
+		<!-- next button to display next products in addition to the ones present hiding old ones -->
+		<button class="next-btn"><b>Next</b></button>
+		<!-- previous button to display previous list of product hiding new ones -->
+		<button class="prev-btn"><b>Previous</b></button>
+	</div>
+
+	<!-- division to display the accessory products. -->
+	<div class="products">
+		<section class="category">Accessories</section>
+		<table width="100%" class="product-tags">
+			<tr>
+				<th>
+					<section class="product-info">
+						<h2 class="product-name">Headphone</h2>
+						<img class="product-image" src="./img/accessories/headphone1.jpg" height="200" width="200">
+						<section class="product-price">25000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Smart Watch</h1>
+						<img class="product-image" src="./img/accessories/smartWatch.jpeg" height="200" width="200">
+						<section class="product-price">45220 NRS</section>
+						<button class="cart-btn"><b>Buy Product</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Ear Buds</h1>
+						<img class="product-image" src="./img/accessories/earBuds.jpg" height="200" width="200">
+						<section class="product-price">19000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">VR</h1>
+						<img class="product-image" src="./img/accessories/vr.jfif" height="200" width="200">
+						<section class="product-price">65000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Go Pro</h1>
+						<img class="product-image" src="./img/accessories/goPro.jpg" height="200" width="200">
+						<section class="product-price">98500 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+			</tr>
+		</table>
+		<table width="100%" class="product-tags" style="display: none;">
+			<tr>
+				<th>
+					<section class="product-info">
+						<h2 class="product-name">Router</h2>
+						<img class="product-image" src="./img/accessories/router.jpg" height="200" width="200">
+						<section class="product-price">25500 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Drone</h1>
+						<img class="product-image" src="./img/accessories/drone.jpg" height="200" width="200">
+						<section class="product-price">45000 NRS</section>
+						<button class="cart-btn"><b>Buy Product</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Printer</h1>
+						<img class="product-image" src="./img/accessories/printer2.jfif" height="200" width="200">
+						<section class="product-price">19000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">PS 5</h1>
+						<img class="product-image" src="./img/accessories/ps5.jpg" height="200" width="200">
+						<section class="product-price">55000 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+				<th>
+					<section class="product-info">
+						<h1 class="product-name">Camera</h1>
+						<img class="product-image" src="./img/accessories/camera.jpg" height="200" width="200">
+						<section class="product-price">75520 NRS</section>
+						<button class="cart-btn"><b>Add to Cart</b></button>
+					</section>
+				</th>
+			</tr>
+		</table>
+		<!-- next button to display next products in addition to the ones present hiding old ones -->
+		<button class="next-btn"><b>Next</b></button>
+		<!-- previous button to display previous list of product hiding new ones -->
+		<button class="prev-btn"><b>Previous</b></button>
+	</div>
+	
+	<!-- section defined to display the current date and time  -->
+	<section id="date" class="product-tags" style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 20px;"></section>
+
+	<footer style="margin-top: 40px; align-items: center;" id="footer">
+		<!-- inline css to style the footer. -->
+		<div class="footer-div">
+			<h1>Contact Us</h1>
+			<!-- displaying information of company in footer section. -->
+			<h2 style="margin-top: 10px;">KBR Enterprises</h2>
+			<section class="info">Sales: +9779849152587</section>
+			<section class="info">Email: kbrEnterprises@gmail.com.np</section>
+			<section class="info">Facebook: @kbrEnterprises</section>
+			<section class="info">Location: Some Place, Bhaktapur, Bagmati, Nepal</section>
+			<section class="info">Zip code: 44800</section><br>
+			<p class="info">&copy;21039649 Rohan Sainju</p>
+		</div>
+	</footer>
+
+</body>
+<script type="text/javascript" src="./js/homeHandler.js"></script>
+<script type="text/javascript">
+	// creating a functon to display current date and time
+	function displayDate(){
+			document.getElementById('date').innerHTML = Date();
+			setTimeout(displayDate,1000);
+		}
+		displayDate();
+</script>
+</html>

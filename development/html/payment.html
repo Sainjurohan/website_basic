@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="21039649 Rohan Sainju">
+	<meta name="description" content="Just Basic HTML">
+	<!-- linking the external style sheets. -->
+	<link rel="stylesheet" type="text/css" href="../css/orderStyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/navStyle.css">
+	<!-- linking the external javascript with async attribute to load it along with html page -->
+	
+	<!-- <meta http-equiv="refresh" content="50"> -->
+	<title>Payment</title>
+</head>
+<body>
+	<!-- creating navigation bar to ease navigation between htnml pages -->
+	<nav class="navbar">
+		<!-- division for logo. -->
+		<div class="logo">E-Commerce</div>
+		<!-- division for navigation links -->
+		<div class="menu">
+			<ul>
+				<!-- linking html pages using ancor tag -->
+				<li><a href="../home.html">Home</a></li>
+				<li class="current"><a href="../html/payment.html">Payments</a></li>
+				<li><a href="../html/contacts.html">Inquiry</a></li>
+				<li><a href="../html/reference.html">Reference</a></li>
+				<li><a href="../html/blog.html">Blog</a></li>
+			</ul>
+		</div>
+
+	</nav>
+
+	<h2 align="center">Welcome to our E-Commerce Website</h2>
+
+	<div class="product-info">
+		<section class="payment-info">Payment Interface</section>
+		<!-- creating table with input fields to acquire information from customers for payment-->
+		<table width="100%" style="margin: auto;">
+			
+			<tr>
+				<th>Email</th>
+				<th>
+					<!-- input field for email -->
+					<input type="text" name="email" id="email" placeholder="e.g. someone@gmail.com" class="input-field">
+					<!-- span for displaying error message in case of empty email or invalid email. -->
+					<span id="emailErr" class="error"></span>
+				</th>
+			</tr>
+
+			<tr>
+				<th>Password</th>
+				<th>
+					<input type="password" name="password" id="pass" placeholder="Type Password Here" class="input-field">
+					<!-- span for displaying error message if error in password. -->
+					<span id="passErr" class="error"></span>
+				</th>
+			</tr>
+			
+			<tr>
+				<th>Amount</th>
+				<th>
+					<input type="text" name="amount" id="payAmt" placeholder="Enter Purchase Amount" class="input-field">
+					<!-- span for displaying amount error. -->
+					<span id="amtErr" class="error"></span>
+				</th>
+			</tr>
+
+			<tr>
+				<th>Card Number</th>
+				<th>
+					<input type="text" name="card" id="cNum" placeholder="Type Card Number" class="input-field" maxlength="16" minlength="16">
+					<span id="cardErr" class="error"></span>
+				</th>
+			</tr>
+
+			<tr>
+				<th>Valid Upto</th>
+				<th>
+					<input type="date" name="validity" id="validity" placeholder="e.g. YYYY/MM/DD " class="input-field">
+					<span id="dateErr" class="error"></span>
+				</th>
+			</tr>
+
+			<tr>
+				<th>Card Code</th>
+				<th>
+					<input type="text" name="code" id="cCode" class="input-field" placeholder="Type Card Code Here" maxlength="3">
+					<span id="codeErr" class="error"></span>
+				</th>
+			</tr>
+			
+			<tr>
+				<th>Zip Code</th>
+				<th>
+					<input type="text" name="zipCode" id="zipCode" class="input-field" placeholder="Type Your Zip Code" minlength="4" maxlength="5">
+					<span id="zipErr" class="error"></span>
+				</th>
+			</tr>
+
+		</table>
+		<!-- purchase button to make purchase of goods. -->
+		<button class="orderBtn">Pay</button>
+	</div>
+
+	<footer style="margin-top: 40px;" id="footer">
+		<div class="footer-div">
+			<!-- inline css to style div of footer. -->
+			<h1>Contact Us</h1>
+			<h2 style="margin-top: 10px;">KBR Enterprises</h2>
+			<section class="info">Sales: +9779849152587</section>
+			<section class="info">Email: kbrEnterprises@gmail.com.np</section>
+			<section class="info">Facebook: @kbrEnterprises</section>
+			<section class="info">Location: Some Place, Bhaktapur, Bagmati, Nepal</section>
+			<section class="info">Zip code: 44800</section><br>
+			<!-- displaying copyright information. -->
+			<p class="info">&copy;21039649 Rohan Sainju</p>
+		</div>
+	</footer>
+
+</body>
+<script type="text/javascript" src="../js/paymentHandler.js"></script>
+</html>
